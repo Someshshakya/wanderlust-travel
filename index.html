@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wanderlust — Travel Recommendations</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+          <span class="logo-icon">✈️</span>
+          Wanderlust
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <div class="search-box">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Search destinations..."
+              aria-label="Search destinations"
+            />
+            <button class="btn btn-primary btn-search" id="search-btn">
+              Search
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <h1>Discover Your Next Adventure</h1>
+        <p>
+          Explore breathtaking beaches, ancient temples, and incredible
+          countries. Find your perfect travel destination with our curated
+          recommendations.
+        </p>
+        <div class="hero-buttons">
+          <button class="btn btn-primary" id="explore-btn">Explore Now</button>
+          <button class="btn btn-accent" id="beach-btn">🏖️ Beaches</button>
+          <button class="btn btn-outline" id="temple-btn">🏛️ Temples</button>
+        </div>
+      </section>
+
+      <section id="recommendations">
+        <h2 class="section-title">Travel <span>Recommendations</span></h2>
+
+        <div class="category-filters">
+          <button class="filter-btn active" data-category="all">All</button>
+          <button class="filter-btn" data-category="beach">Beaches</button>
+          <button class="filter-btn" data-category="temple">Temples</button>
+          <button class="filter-btn" data-category="country">Countries</button>
+        </div>
+
+        <div class="results-grid" id="results"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Wanderlust Travel Recommendations. Built for JS Essentials.</p>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us — Wanderlust</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+          <span class="logo-icon">✈️</span>
+          Wanderlust
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <div class="search-box">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Search destinations..."
+              aria-label="Search destinations"
+            />
+            <button class="btn btn-primary btn-search" id="search-btn">
+              Search
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="about-hero">
+        <h1>Contact Us</h1>
+        <p style="color: var(--text-muted)">
+          Have a question or travel suggestion? We'd love to hear from you.
+        </p>
+      </section>
+
+      <div class="contact-container">
+        <div class="contact-info">
+          <h2>Get in Touch</h2>
+          <p>
+            Whether you need travel advice or want to share your favorite
+            destination, our team is here to help.
+          </p>
+          <div class="contact-detail">
+            <span>📧</span>
+            <span>hello@wanderlust-travel.com</span>
+          </div>
+          <div class="contact-detail">
+            <span>📞</span>
+            <span>+1 (555) 123-4567</span>
+          </div>
+          <div class="contact-detail">
+            <span>📍</span>
+            <span>123 Explorer Lane, Travel City, TC 10001</span>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+          <h2>Send Us an Email</h2>
+
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@example.com"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject" required>
+              <option value="">Select a topic</option>
+              <option value="general">General Inquiry</option>
+              <option value="recommendation">Travel Recommendation</option>
+              <option value="feedback">Feedback</option>
+              <option value="partnership">Partnership</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Tell us about your travel plans or questions..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%">
+            Send Message
+          </button>
+
+          <div class="form-success" id="form-success">
+            Thank you! Your message has been sent successfully.
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Wanderlust Travel Recommendations. Built for JS Essentials.</p>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
