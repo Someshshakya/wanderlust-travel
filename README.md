@@ -13,7 +13,7 @@ A static travel recommendation website built for the JS Essentials final project
 ## Project Structure
 
 ```
-js-essentials/
+wanderlust-travel/
 ├── index.html          # Home page
 ├── about.html          # About Us page
 ├── contact.html        # Contact Us page
@@ -35,39 +35,26 @@ npx serve .
 
 ## Deploy to GitHub Pages
 
-1. Create a **public** repository on GitHub (e.g. `js-essentials`).
+1. In your GitHub repo, go to **Settings → Pages**.
 
-2. Push this project to the repository:
+2. Under **Source**, select **Deploy from a branch**.
 
-   ```bash
-   git init
-   git add .
-   git commit -m "Add travel recommendation web application"
-   git branch -M main
-   git remote add origin https://github.com/YOUR_USERNAME/js-essentials.git
-   git push -u origin main
-   ```
+3. Choose the **main** branch and **/ (root)** folder, then click **Save**.
 
-3. In your GitHub repo, go to **Settings → Pages**.
-
-4. Under **Source**, select **Deploy from a branch**.
-
-5. Choose the **main** branch and **/ (root)** folder, then click **Save**.
-
-6. After a minute or two, your site will be live at:
+4. After a minute or two, your site will be live at:
 
    ```
-   https://YOUR_USERNAME.github.io/js-essentials/
+   https://Someshshakya.github.io/wanderlust-travel/
    ```
 
 ## Submission Checklist
 
 When submitting the assignment, provide both URLs with the `https://` prefix:
 
-| Field | Example |
-|-------|---------|
-| GitHub Repository | `https://github.com/YOUR_USERNAME/js-essentials` |
-| GitHub Pages URL | `https://YOUR_USERNAME.github.io/js-essentials/` |
+| Field | URL |
+|-------|-----|
+| GitHub Repository | `https://github.com/Someshshakya/wanderlust-travel` |
+| GitHub Pages URL | `https://Someshshakya.github.io/wanderlust-travel/` |
 
 ## Rubric Coverage
 
