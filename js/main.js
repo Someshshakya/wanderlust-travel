@@ -69,6 +69,7 @@ function filterByCategory(category) {
 function initSearch() {
   const searchInput = document.getElementById("search-input");
   const searchBtn = document.getElementById("search-btn");
+  const clearBtn = document.getElementById("clear-btn");
   const resultsContainer = document.getElementById("results");
   const filterBtns = document.querySelectorAll(".filter-btn");
 
@@ -89,6 +90,17 @@ function initSearch() {
 
   if (searchBtn) {
     searchBtn.addEventListener("click", updateResults);
+  }
+
+  if (clearBtn) {
+    clearBtn.addEventListener("click", () => {
+      if (searchInput) searchInput.value = "";
+      activeCategory = "all";
+      filterBtns.forEach((b) => b.classList.remove("active"));
+      const allBtn = document.querySelector('[data-category="all"]');
+      allBtn?.classList.add("active");
+      updateResults();
+    });
   }
 
   if (searchInput) {
